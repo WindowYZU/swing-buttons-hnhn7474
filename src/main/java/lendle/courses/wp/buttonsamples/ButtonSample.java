@@ -7,6 +7,7 @@ package lendle.courses.wp.buttonsamples;
 
 import java.awt.FlowLayout;
 import java.awt.Image;
+import java.io.File;
 import java.net.URL;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -32,10 +33,11 @@ public class ButtonSample {
         //1. 建立 button，text 設定為 Find
         //2. 建立 icon
         //3. 設定 icon
-        JButton button=null;
-        ImageIcon icon=null;
+        JButton button=new JButton("Find");
+        button.setMnemonic('F');
+        ImageIcon icon=new ImageIcon(new File("C:\\Users\\user\\Desktop\\868630240-170x170.jpg").toURI().toURL());
         ImageIcon icon2=new ImageIcon(icon.getImage().getScaledInstance(25, 25, Image.SCALE_SMOOTH));
-        button.setIcon();
+        button.setIcon(icon2);
         ////////////////////////////////////
         frame.add(button);
         frame.getRootPane().setDefaultButton(button);
