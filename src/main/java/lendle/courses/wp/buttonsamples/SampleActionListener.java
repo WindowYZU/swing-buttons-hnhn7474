@@ -16,7 +16,7 @@ public class SampleActionListener implements ActionListener{
 
     @Override
     public void actionPerformed(ActionEvent e) {
-       System.out.println("clicked!");  
+       System.out.println("yes you make it!");  
     }
     //1. override ActionListener
     //2. 裡面寫 System.out.println("clicked!");
